@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Редактор карт</title>
+    <link rel="stylesheet" href="editor_styles.css">
+</head>
+
+<body>
+    <div id="toolbar">
+        <button id="loadSvgBtn">Загрузить SVG</button>
+        <input type="file" id="fileInput" accept=".svg" style="display:none;">
+        <button id="addNodeBtn">Добавить Node</button>
+        <button id="moveNodeBtn">Двигать Node</button>
+        <button id="connectBtn">Соединять Node-ы</button>
+        <button id="deleteBtn">Удаление Node-ов</button>
+        <button id="nameNode">Назвать Node</button>
+        <hr />
+        <button id="exportSvgBtn">Экспорт SVG</button>
+        <button id="exportJsBtn">Экспорт соединений</button>
+    </div>
+
+    <div id="canvasWrapper">
+        <svg id="map" width="800" height="600" viewBox="0 0 800 600">
+            <rect x="0" y="0" width="800" height="600" fill="#e0f7ff" stroke="#ccc" stroke-width="2" />
+            <g id="connections"></g>
+            <g id="nodes"></g>
+        </svg>
+    </div>
+
+    <script>
+        (function () {
+            var svg = document.getElementById('mainSvg');
+            var connectionsG = document.getElementById('connections');
+            var nodesG = document.getElementById('nodes');
+
+            let pan = { x: 0, y: 0 };
+            let zoom = 1;
+            let isPanning = false;
+            let startPan = { x: 0, y: 0 };
+
+            let mode = null;
+
+            let isDraggingNode = false;
+            let dragNode = null;
+            let dragOffset = { x: 0, y: 0 };
+
+            let connections = [];
+            let firstNodeId = null;
+
+            const addNodeBtn = document.getElementById('addNodeBtn');
+            const moveNodeBtn = document.getElementById('moveNodeBtn');
+            const connectBtn = document.getElementById('connectBtn');
+            const deleteBtn = document.getElementById('deleteBtn');
+            const exportSvgBtn = document.getElementById('exportSvgBtn');
+            const exportJsBtn = document.getElementById('exportJsBtn');
+            const nameNodeBtn = document.getElementById('nameNode');
+
+            addNodeBtn.addEventListener('click', () => setMode('addNode'));
+            moveNodeBtn.addEventListener('click', () => setMode('moveNode'));
+            connectBtn.addEventListener('click', () => { setMode('connectNodes'); firstNodeId = null; });
+            deleteBtn.addEventListener('click', () => setMode('deleteNode'));
+            exportSvgBtn.addEventListener('click', onExportSvg);
+            exportJsBtn.addEventListener('click', onExportConnections);
+            nameNodeBtn.addEventListener('click', () => setMode('nameNode'));
+
+            const loadSvgBtn = document.getElementById('loadSvgBtn');
+            const fileInput = document.getElementById('fileInput');
+
+            loadSvgBtn.addEventListener('click', () => fileInput.click());
+
+            fileInput.addEventListener('change', function (e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (evt) {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(evt.target.result, "image/svg+xml");
+                        const newSvg = doc.documentElement;
+
+                        newSvg.id = "mainSvg";
+
+                        const oldSvg = document.getElementById('mainSvg');
+                        oldSvg.parentNode.replaceChild(newSvg, oldSvg);
+
+                        reinitSvg(newSvg);
+                    }
+                    reader.readAsText(file);
+                }
+            });
+
+            function reinitSvg(newSvg) {
+                svg = newSvg;
+
+                nodesG = newSvg.querySelector('#nodes') || createGroup(newSvg, 'nodes');
+                connectionsG = newSvg.querySelector('#connections') || createGroup(newSvg, 'connections');
+
+                newSvg.addEventListener('mousedown', onSvgMouseDown);
+                newSvg.addEventListener('mousemove', onSvgMouseMove);
+                newSvg.addEventListener('mouseup', onSvgMouseUp);
+                newSvg.addEventListener('wheel', onSvgWheel, { passive: false });
+                newSvg.addEventListener('click', onSvgClick);
+
+                pan = { x: 0, y: 0 };
+                zoom = 1;
+                applyTransform();
+            }
+
+            function createGroup(svgEl, groupId) {
+                const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                g.setAttribute('id', groupId);
+                svgEl.appendChild(g);
+                return g;
+            }
+
+            function setMode(m) {
+                mode = m;
+                console.log("Mode:", mode);
+            }
+
+            svg.addEventListener('mousedown', onSvgMouseDown);
+            svg.addEventListener('mousemove', onSvgMouseMove);
+            svg.addEventListener('mouseup', onSvgMouseUp);
+            svg.addEventListener('wheel', onSvgWheel, { passive: false });
+            svg.addEventListener('click', onSvgClick);
+
+            function onSvgMouseDown(e) {
+                const target = e.target;
+                if (mode === 'moveNode' && target.tagName === 'circle') {
+                    isDraggingNode = true;
+                    dragNode = target;
+                    const pt = svgPoint(e.clientX, e.clientY);
+                    const cx = parseFloat(dragNode.getAttribute('cx'));
+                    const cy = parseFloat(dragNode.getAttribute('cy'));
+                    dragOffset.x = cx - pt.x;
+                    dragOffset.y = cy - pt.y;
+                    return;
+                }
+
+                isPanning = true;
+                startPan.x = e.clientX - pan.x;
+                startPan.y = e.clientY - pan.y;
+            }
+
+            function onSvgMouseMove(e) {
+                if (isDraggingNode && dragNode) {
+                    e.preventDefault();
+                    const pt = svgPoint(e.clientX, e.clientY);
+                    const newX = pt.x + dragOffset.x;
+                    const newY = pt.y + dragOffset.y;
+                    dragNode.setAttribute('cx', newX);
+                    dragNode.setAttribute('cy', newY);
+
+                    updateLinesForNode(dragNode.id, newX, newY);
+                    return;
+                }
+
+                if (isPanning) {
+                    pan.x = e.clientX - startPan.x;
+                    pan.y = e.clientY - startPan.y;
+                    applyTransform();
+                }
+            }
+
+            function onSvgMouseUp(e) {
+                isPanning = false;
+                isDraggingNode = false;
+                dragNode = null;
+            }
+
+            function onSvgWheel(e) {
+                e.preventDefault();
+                const zoomDelta = 0.1;
+                if (e.deltaY < 0) {
+                    zoom += zoomDelta;
+                } else {
+                    zoom -= zoomDelta;
+                }
+                if (zoom < 0.1) zoom = 0.1;
+                applyTransform();
+            }
+
+            function applyTransform() {
+                svg.style.transform = `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`;
+            }
+
+            function onSvgClick(e) {
+                if (isPanning || isDraggingNode) return;
+
+                const target = e.target;
+                if (target.tagName === 'circle') {
+                    const nodeId = target.id;
+                    if (mode === 'connectNodes') {
+                        onConnectNodeClicked(nodeId, target);
+                    }
+                    else if (mode === 'deleteNode') {
+                        removeNode(nodeId);
+                    }
+                    else if (mode === "nameNode") {
+                        const newClass = prompt("Введите название для Node:");
+                        if (newClass) {
+                            target.classList.add(newClass);
+                            console.log("Ноду добавлен класс:", newClass);
+                        }
+                    }
+                    return;
+                }
+
+                if (mode === 'addNode') {
+                    const pt = svgPoint(e.clientX, e.clientY);
+                    addNode(pt.x, pt.y);
+                }
+            }
+
+            function onConnectNodeClicked(nodeId, nodeEl) {
+                if (!firstNodeId) {
+                    firstNodeId = nodeId;
+                    highlightNode(nodeEl, true);
+                } else {
+                    if (nodeId === firstNodeId) return;
+                    const firstNodeEl = document.getElementById(firstNodeId);
+                    highlightNode(firstNodeEl, false);
+                    createConnection(firstNodeId, nodeId);
+                    firstNodeId = null;
+                }
+            }
+
+            function highlightNode(nodeEl, enabled) {
+                if (enabled) {
+                    nodeEl.setAttribute('stroke', 'red');
+                    nodeEl.setAttribute('stroke-width', '2');
+                } else {
+                    nodeEl.removeAttribute('stroke');
+                    nodeEl.removeAttribute('stroke-width');
+                }
+            }
+
+            function addNode(x, y) {
+                const id = "node" + Date.now();
+                const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                circle.setAttribute('cx', x);
+                circle.setAttribute('cy', y);
+                circle.setAttribute('r', 6);
+                circle.setAttribute('fill', 'blue');
+                circle.setAttribute('id', id);
+                nodesG.appendChild(circle);
+            }
+
+            function removeNode(nodeId) {
+                const nodeEl = document.getElementById(nodeId);
+                if (nodeEl) {
+                    nodeEl.remove();
+                }
+                connections = connections.filter(([a, b]) => a !== nodeId && b !== nodeId);
+                const lines = connectionsG.querySelectorAll('line');
+                lines.forEach(line => {
+                    if (line.getAttribute('data-n1') === nodeId || line.getAttribute('data-n2') === nodeId) {
+                        line.remove();
+                    }
+                });
+            }
+
+            function createConnection(n1, n2) {
+                const exists = connections.some(([a, b]) => (a === n1 && b === n2) || (a === n2 && b === n1));
+                if (exists) return;
+                connections.push([n1, n2]);
+
+                const node1 = document.getElementById(n1);
+                const node2 = document.getElementById(n2);
+                if (!node1 || !node2) return;
+
+                const x1 = parseFloat(node1.getAttribute('cx'));
+                const y1 = parseFloat(node1.getAttribute('cy'));
+                const x2 = parseFloat(node2.getAttribute('cx'));
+                const y2 = parseFloat(node2.getAttribute('cy'));
+
+                const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                line.setAttribute('x1', x1);
+                line.setAttribute('y1', y1);
+                line.setAttribute('x2', x2);
+                line.setAttribute('y2', y2);
+                line.setAttribute('stroke', 'red');
+                line.setAttribute('stroke-width', '2');
+                line.setAttribute('data-n1', n1);
+                line.setAttribute('data-n2', n2);
+                connectionsG.appendChild(line);
+            }
+
+            function updateLinesForNode(nodeId, newX, newY) {
+                const lines = connectionsG.querySelectorAll('line');
+                lines.forEach(line => {
+                    if (line.getAttribute('data-n1') === nodeId) {
+                        line.setAttribute('x1', newX);
+                        line.setAttribute('y1', newY);
+                    }
+                    if (line.getAttribute('data-n2') === nodeId) {
+                        line.setAttribute('x2', newX);
+                        line.setAttribute('y2', newY);
+                    }
+                });
+            }
+
+            function svgPoint(clientX, clientY) {
+                const pt = svg.createSVGPoint();
+                pt.x = clientX;
+                pt.y = clientY;
+                return pt.matrixTransform(svg.getScreenCTM().inverse());
+            }
+
+            function onExportSvg() {
+                const clone = svg.cloneNode(true);
+
+                const nodes = clone.querySelectorAll('#nodes circle');
+                nodes.forEach(node => {
+                    node.removeAttribute('fill');
+                });
+
+                const connections = clone.querySelector('#connections');
+                if (connections) {
+                    connections.remove();
+                }
+
+                const serializer = new XMLSerializer();
+                const str = serializer.serializeToString(clone);
+                const dataUrl = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(str);
+
+                const a = document.createElement('a');
+                a.href = dataUrl;
+                a.download = 'map_edited.svg';
+                a.click();
+            }
+
+            function onExportConnections() {
+                const exportData = {
+                    svgFileName: "map_with_nodes.svg",
+                    edges: connections
+                };
+                const jsonData = JSON.stringify(exportData, null, 2);
+                console.log(jsonData);
+                // download the JSON data
+                const blob = new Blob([jsonData], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'connections.json';
+                a.click();
+            }
+
+            setMode('addNode');
+        })();
+    </script>
+</body>
+
+</html>

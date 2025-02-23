@@ -1,0 +1,1425 @@
+<html lang="ru" class="">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta charset="utf-8">
+      <meta name="description" content="Личный кабинет студентов и сотрудников Самарского университета">
+      <meta name="keywords" content="личный кабинет, Самарский университет, ">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="environment" content="production">
+      <meta name="csrf-token" content="k0YKVpSg1LPuZexlAKjgx22XW1cGOmP0DDJK1Hzo">
+      <title>Расписание | Личный кабинет</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link href="asset/css/chunk-vendors.7e18face.css" rel="stylesheet">
+      <link href="asset/css/app.6c4cda32.css" rel="stylesheet">
+      <style type="text/css">.vue-notification-group{display:block;position:fixed;z-index:5000}.vue-notification-wrapper{display:block;overflow:hidden;width:100%;margin:0;padding:0}.notification-title{font-weight:600}.vue-notification-template{background:#fff}.vue-notification,.vue-notification-template{display:block;box-sizing:border-box;text-align:left}.vue-notification{font-size:12px;padding:10px;margin:0 5px 5px;color:#fff;background:#44a4fc;border-left:5px solid #187fe7}.vue-notification.warn{background:#ffb648;border-left-color:#f48a06}.vue-notification.error{background:#e54d42;border-left-color:#b82e24}.vue-notification.success{background:#68cd86;border-left-color:#42a85f}.vn-fade-enter-active,.vn-fade-leave-active,.vn-fade-move{transition:all .5s}.vn-fade-enter,.vn-fade-leave-to{opacity:0}</style>
+      <link rel="stylesheet" type="text/css" href="asset/css/chunk-ada3e200.919b390f.css">
+      <script charset="utf-8" src="asset/js/chunk-ada3e200-legacy.280103de.js"></script>
+      <link rel="stylesheet" type="text/css" href="asset/css/chunk-7c274f8c.c3d1fc37.css">
+      <script charset="utf-8" src="asset/js/chunk-7c274f8c-legacy.37d559bc.js"></script>
+      <link rel="stylesheet" type="text/css" href="asset/css/chunk-0a8ce5cf.d955fa7f.css">
+      <script charset="utf-8" src="asset/js/chunk-0a8ce5cf-legacy.18eb8626.js"></script>
+      <link rel="stylesheet" type="text/css" href="asset/css/chunk-164abcd3.9deb4d24.css">
+      <script charset="utf-8" src="asset/js/chunk-164abcd3-legacy.c9ea5779.js"></script>
+      <style type="text/css" id="vuetify-theme-stylesheet">.v-application a { color: #1976d2; }
+         .v-application .primary {
+         background-color: #1976d2 !important;
+         border-color: #1976d2 !important;
+         }
+         .v-application .primary--text {
+         color: #1976d2 !important;
+         caret-color: #1976d2 !important;
+         }
+         .v-application .primary.lighten-5 {
+         background-color: #c7fdff !important;
+         border-color: #c7fdff !important;
+         }
+         .v-application .primary--text.text--lighten-5 {
+         color: #c7fdff !important;
+         caret-color: #c7fdff !important;
+         }
+         .v-application .primary.lighten-4 {
+         background-color: #a8e0ff !important;
+         border-color: #a8e0ff !important;
+         }
+         .v-application .primary--text.text--lighten-4 {
+         color: #a8e0ff !important;
+         caret-color: #a8e0ff !important;
+         }
+         .v-application .primary.lighten-3 {
+         background-color: #8ac5ff !important;
+         border-color: #8ac5ff !important;
+         }
+         .v-application .primary--text.text--lighten-3 {
+         color: #8ac5ff !important;
+         caret-color: #8ac5ff !important;
+         }
+         .v-application .primary.lighten-2 {
+         background-color: #6aaaff !important;
+         border-color: #6aaaff !important;
+         }
+         .v-application .primary--text.text--lighten-2 {
+         color: #6aaaff !important;
+         caret-color: #6aaaff !important;
+         }
+         .v-application .primary.lighten-1 {
+         background-color: #488fef !important;
+         border-color: #488fef !important;
+         }
+         .v-application .primary--text.text--lighten-1 {
+         color: #488fef !important;
+         caret-color: #488fef !important;
+         }
+         .v-application .primary.darken-1 {
+         background-color: #005eb6 !important;
+         border-color: #005eb6 !important;
+         }
+         .v-application .primary--text.text--darken-1 {
+         color: #005eb6 !important;
+         caret-color: #005eb6 !important;
+         }
+         .v-application .primary.darken-2 {
+         background-color: #00479b !important;
+         border-color: #00479b !important;
+         }
+         .v-application .primary--text.text--darken-2 {
+         color: #00479b !important;
+         caret-color: #00479b !important;
+         }
+         .v-application .primary.darken-3 {
+         background-color: #003180 !important;
+         border-color: #003180 !important;
+         }
+         .v-application .primary--text.text--darken-3 {
+         color: #003180 !important;
+         caret-color: #003180 !important;
+         }
+         .v-application .primary.darken-4 {
+         background-color: #001e67 !important;
+         border-color: #001e67 !important;
+         }
+         .v-application .primary--text.text--darken-4 {
+         color: #001e67 !important;
+         caret-color: #001e67 !important;
+         }
+         .v-application .secondary {
+         background-color: #424242 !important;
+         border-color: #424242 !important;
+         }
+         .v-application .secondary--text {
+         color: #424242 !important;
+         caret-color: #424242 !important;
+         }
+         .v-application .secondary.lighten-5 {
+         background-color: #c1c1c1 !important;
+         border-color: #c1c1c1 !important;
+         }
+         .v-application .secondary--text.text--lighten-5 {
+         color: #c1c1c1 !important;
+         caret-color: #c1c1c1 !important;
+         }
+         .v-application .secondary.lighten-4 {
+         background-color: #a6a6a6 !important;
+         border-color: #a6a6a6 !important;
+         }
+         .v-application .secondary--text.text--lighten-4 {
+         color: #a6a6a6 !important;
+         caret-color: #a6a6a6 !important;
+         }
+         .v-application .secondary.lighten-3 {
+         background-color: #8b8b8b !important;
+         border-color: #8b8b8b !important;
+         }
+         .v-application .secondary--text.text--lighten-3 {
+         color: #8b8b8b !important;
+         caret-color: #8b8b8b !important;
+         }
+         .v-application .secondary.lighten-2 {
+         background-color: #727272 !important;
+         border-color: #727272 !important;
+         }
+         .v-application .secondary--text.text--lighten-2 {
+         color: #727272 !important;
+         caret-color: #727272 !important;
+         }
+         .v-application .secondary.lighten-1 {
+         background-color: #595959 !important;
+         border-color: #595959 !important;
+         }
+         .v-application .secondary--text.text--lighten-1 {
+         color: #595959 !important;
+         caret-color: #595959 !important;
+         }
+         .v-application .secondary.darken-1 {
+         background-color: #2c2c2c !important;
+         border-color: #2c2c2c !important;
+         }
+         .v-application .secondary--text.text--darken-1 {
+         color: #2c2c2c !important;
+         caret-color: #2c2c2c !important;
+         }
+         .v-application .secondary.darken-2 {
+         background-color: #171717 !important;
+         border-color: #171717 !important;
+         }
+         .v-application .secondary--text.text--darken-2 {
+         color: #171717 !important;
+         caret-color: #171717 !important;
+         }
+         .v-application .secondary.darken-3 {
+         background-color: #000000 !important;
+         border-color: #000000 !important;
+         }
+         .v-application .secondary--text.text--darken-3 {
+         color: #000000 !important;
+         caret-color: #000000 !important;
+         }
+         .v-application .secondary.darken-4 {
+         background-color: #000000 !important;
+         border-color: #000000 !important;
+         }
+         .v-application .secondary--text.text--darken-4 {
+         color: #000000 !important;
+         caret-color: #000000 !important;
+         }
+         .v-application .accent {
+         background-color: #82b1ff !important;
+         border-color: #82b1ff !important;
+         }
+         .v-application .accent--text {
+         color: #82b1ff !important;
+         caret-color: #82b1ff !important;
+         }
+         .v-application .accent.lighten-5 {
+         background-color: #ffffff !important;
+         border-color: #ffffff !important;
+         }
+         .v-application .accent--text.text--lighten-5 {
+         color: #ffffff !important;
+         caret-color: #ffffff !important;
+         }
+         .v-application .accent.lighten-4 {
+         background-color: #f8ffff !important;
+         border-color: #f8ffff !important;
+         }
+         .v-application .accent--text.text--lighten-4 {
+         color: #f8ffff !important;
+         caret-color: #f8ffff !important;
+         }
+         .v-application .accent.lighten-3 {
+         background-color: #daffff !important;
+         border-color: #daffff !important;
+         }
+         .v-application .accent--text.text--lighten-3 {
+         color: #daffff !important;
+         caret-color: #daffff !important;
+         }
+         .v-application .accent.lighten-2 {
+         background-color: #bce8ff !important;
+         border-color: #bce8ff !important;
+         }
+         .v-application .accent--text.text--lighten-2 {
+         color: #bce8ff !important;
+         caret-color: #bce8ff !important;
+         }
+         .v-application .accent.lighten-1 {
+         background-color: #9fccff !important;
+         border-color: #9fccff !important;
+         }
+         .v-application .accent--text.text--lighten-1 {
+         color: #9fccff !important;
+         caret-color: #9fccff !important;
+         }
+         .v-application .accent.darken-1 {
+         background-color: #6596e2 !important;
+         border-color: #6596e2 !important;
+         }
+         .v-application .accent--text.text--darken-1 {
+         color: #6596e2 !important;
+         caret-color: #6596e2 !important;
+         }
+         .v-application .accent.darken-2 {
+         background-color: #467dc6 !important;
+         border-color: #467dc6 !important;
+         }
+         .v-application .accent--text.text--darken-2 {
+         color: #467dc6 !important;
+         caret-color: #467dc6 !important;
+         }
+         .v-application .accent.darken-3 {
+         background-color: #2364aa !important;
+         border-color: #2364aa !important;
+         }
+         .v-application .accent--text.text--darken-3 {
+         color: #2364aa !important;
+         caret-color: #2364aa !important;
+         }
+         .v-application .accent.darken-4 {
+         background-color: #004c90 !important;
+         border-color: #004c90 !important;
+         }
+         .v-application .accent--text.text--darken-4 {
+         color: #004c90 !important;
+         caret-color: #004c90 !important;
+         }
+         .v-application .error {
+         background-color: #ff5252 !important;
+         border-color: #ff5252 !important;
+         }
+         .v-application .error--text {
+         color: #ff5252 !important;
+         caret-color: #ff5252 !important;
+         }
+         .v-application .error.lighten-5 {
+         background-color: #ffe4d5 !important;
+         border-color: #ffe4d5 !important;
+         }
+         .v-application .error--text.text--lighten-5 {
+         color: #ffe4d5 !important;
+         caret-color: #ffe4d5 !important;
+         }
+         .v-application .error.lighten-4 {
+         background-color: #ffc6b9 !important;
+         border-color: #ffc6b9 !important;
+         }
+         .v-application .error--text.text--lighten-4 {
+         color: #ffc6b9 !important;
+         caret-color: #ffc6b9 !important;
+         }
+         .v-application .error.lighten-3 {
+         background-color: #ffa99e !important;
+         border-color: #ffa99e !important;
+         }
+         .v-application .error--text.text--lighten-3 {
+         color: #ffa99e !important;
+         caret-color: #ffa99e !important;
+         }
+         .v-application .error.lighten-2 {
+         background-color: #ff8c84 !important;
+         border-color: #ff8c84 !important;
+         }
+         .v-application .error--text.text--lighten-2 {
+         color: #ff8c84 !important;
+         caret-color: #ff8c84 !important;
+         }
+         .v-application .error.lighten-1 {
+         background-color: #ff6f6a !important;
+         border-color: #ff6f6a !important;
+         }
+         .v-application .error--text.text--lighten-1 {
+         color: #ff6f6a !important;
+         caret-color: #ff6f6a !important;
+         }
+         .v-application .error.darken-1 {
+         background-color: #df323b !important;
+         border-color: #df323b !important;
+         }
+         .v-application .error--text.text--darken-1 {
+         color: #df323b !important;
+         caret-color: #df323b !important;
+         }
+         .v-application .error.darken-2 {
+         background-color: #bf0025 !important;
+         border-color: #bf0025 !important;
+         }
+         .v-application .error--text.text--darken-2 {
+         color: #bf0025 !important;
+         caret-color: #bf0025 !important;
+         }
+         .v-application .error.darken-3 {
+         background-color: #9f0010 !important;
+         border-color: #9f0010 !important;
+         }
+         .v-application .error--text.text--darken-3 {
+         color: #9f0010 !important;
+         caret-color: #9f0010 !important;
+         }
+         .v-application .error.darken-4 {
+         background-color: #800000 !important;
+         border-color: #800000 !important;
+         }
+         .v-application .error--text.text--darken-4 {
+         color: #800000 !important;
+         caret-color: #800000 !important;
+         }
+         .v-application .info {
+         background-color: #2196f3 !important;
+         border-color: #2196f3 !important;
+         }
+         .v-application .info--text {
+         color: #2196f3 !important;
+         caret-color: #2196f3 !important;
+         }
+         .v-application .info.lighten-5 {
+         background-color: #d4ffff !important;
+         border-color: #d4ffff !important;
+         }
+         .v-application .info--text.text--lighten-5 {
+         color: #d4ffff !important;
+         caret-color: #d4ffff !important;
+         }
+         .v-application .info.lighten-4 {
+         background-color: #b5ffff !important;
+         border-color: #b5ffff !important;
+         }
+         .v-application .info--text.text--lighten-4 {
+         color: #b5ffff !important;
+         caret-color: #b5ffff !important;
+         }
+         .v-application .info.lighten-3 {
+         background-color: #95e8ff !important;
+         border-color: #95e8ff !important;
+         }
+         .v-application .info--text.text--lighten-3 {
+         color: #95e8ff !important;
+         caret-color: #95e8ff !important;
+         }
+         .v-application .info.lighten-2 {
+         background-color: #75ccff !important;
+         border-color: #75ccff !important;
+         }
+         .v-application .info--text.text--lighten-2 {
+         color: #75ccff !important;
+         caret-color: #75ccff !important;
+         }
+         .v-application .info.lighten-1 {
+         background-color: #51b0ff !important;
+         border-color: #51b0ff !important;
+         }
+         .v-application .info--text.text--lighten-1 {
+         color: #51b0ff !important;
+         caret-color: #51b0ff !important;
+         }
+         .v-application .info.darken-1 {
+         background-color: #007cd6 !important;
+         border-color: #007cd6 !important;
+         }
+         .v-application .info--text.text--darken-1 {
+         color: #007cd6 !important;
+         caret-color: #007cd6 !important;
+         }
+         .v-application .info.darken-2 {
+         background-color: #0064ba !important;
+         border-color: #0064ba !important;
+         }
+         .v-application .info--text.text--darken-2 {
+         color: #0064ba !important;
+         caret-color: #0064ba !important;
+         }
+         .v-application .info.darken-3 {
+         background-color: #004d9f !important;
+         border-color: #004d9f !important;
+         }
+         .v-application .info--text.text--darken-3 {
+         color: #004d9f !important;
+         caret-color: #004d9f !important;
+         }
+         .v-application .info.darken-4 {
+         background-color: #003784 !important;
+         border-color: #003784 !important;
+         }
+         .v-application .info--text.text--darken-4 {
+         color: #003784 !important;
+         caret-color: #003784 !important;
+         }
+         .v-application .success {
+         background-color: #4caf50 !important;
+         border-color: #4caf50 !important;
+         }
+         .v-application .success--text {
+         color: #4caf50 !important;
+         caret-color: #4caf50 !important;
+         }
+         .v-application .success.lighten-5 {
+         background-color: #dcffd6 !important;
+         border-color: #dcffd6 !important;
+         }
+         .v-application .success--text.text--lighten-5 {
+         color: #dcffd6 !important;
+         caret-color: #dcffd6 !important;
+         }
+         .v-application .success.lighten-4 {
+         background-color: #beffba !important;
+         border-color: #beffba !important;
+         }
+         .v-application .success--text.text--lighten-4 {
+         color: #beffba !important;
+         caret-color: #beffba !important;
+         }
+         .v-application .success.lighten-3 {
+         background-color: #a2ff9e !important;
+         border-color: #a2ff9e !important;
+         }
+         .v-application .success--text.text--lighten-3 {
+         color: #a2ff9e !important;
+         caret-color: #a2ff9e !important;
+         }
+         .v-application .success.lighten-2 {
+         background-color: #85e783 !important;
+         border-color: #85e783 !important;
+         }
+         .v-application .success--text.text--lighten-2 {
+         color: #85e783 !important;
+         caret-color: #85e783 !important;
+         }
+         .v-application .success.lighten-1 {
+         background-color: #69cb69 !important;
+         border-color: #69cb69 !important;
+         }
+         .v-application .success--text.text--lighten-1 {
+         color: #69cb69 !important;
+         caret-color: #69cb69 !important;
+         }
+         .v-application .success.darken-1 {
+         background-color: #2d9437 !important;
+         border-color: #2d9437 !important;
+         }
+         .v-application .success--text.text--darken-1 {
+         color: #2d9437 !important;
+         caret-color: #2d9437 !important;
+         }
+         .v-application .success.darken-2 {
+         background-color: #00791e !important;
+         border-color: #00791e !important;
+         }
+         .v-application .success--text.text--darken-2 {
+         color: #00791e !important;
+         caret-color: #00791e !important;
+         }
+         .v-application .success.darken-3 {
+         background-color: #006000 !important;
+         border-color: #006000 !important;
+         }
+         .v-application .success--text.text--darken-3 {
+         color: #006000 !important;
+         caret-color: #006000 !important;
+         }
+         .v-application .success.darken-4 {
+         background-color: #004700 !important;
+         border-color: #004700 !important;
+         }
+         .v-application .success--text.text--darken-4 {
+         color: #004700 !important;
+         caret-color: #004700 !important;
+         }
+         .v-application .warning {
+         background-color: #fb8c00 !important;
+         border-color: #fb8c00 !important;
+         }
+         .v-application .warning--text {
+         color: #fb8c00 !important;
+         caret-color: #fb8c00 !important;
+         }
+         .v-application .warning.lighten-5 {
+         background-color: #ffff9e !important;
+         border-color: #ffff9e !important;
+         }
+         .v-application .warning--text.text--lighten-5 {
+         color: #ffff9e !important;
+         caret-color: #ffff9e !important;
+         }
+         .v-application .warning.lighten-4 {
+         background-color: #fffb82 !important;
+         border-color: #fffb82 !important;
+         }
+         .v-application .warning--text.text--lighten-4 {
+         color: #fffb82 !important;
+         caret-color: #fffb82 !important;
+         }
+         .v-application .warning.lighten-3 {
+         background-color: #ffdf67 !important;
+         border-color: #ffdf67 !important;
+         }
+         .v-application .warning--text.text--lighten-3 {
+         color: #ffdf67 !important;
+         caret-color: #ffdf67 !important;
+         }
+         .v-application .warning.lighten-2 {
+         background-color: #ffc24b !important;
+         border-color: #ffc24b !important;
+         }
+         .v-application .warning--text.text--lighten-2 {
+         color: #ffc24b !important;
+         caret-color: #ffc24b !important;
+         }
+         .v-application .warning.lighten-1 {
+         background-color: #ffa72d !important;
+         border-color: #ffa72d !important;
+         }
+         .v-application .warning--text.text--lighten-1 {
+         color: #ffa72d !important;
+         caret-color: #ffa72d !important;
+         }
+         .v-application .warning.darken-1 {
+         background-color: #db7200 !important;
+         border-color: #db7200 !important;
+         }
+         .v-application .warning--text.text--darken-1 {
+         color: #db7200 !important;
+         caret-color: #db7200 !important;
+         }
+         .v-application .warning.darken-2 {
+         background-color: #bb5900 !important;
+         border-color: #bb5900 !important;
+         }
+         .v-application .warning--text.text--darken-2 {
+         color: #bb5900 !important;
+         caret-color: #bb5900 !important;
+         }
+         .v-application .warning.darken-3 {
+         background-color: #9d4000 !important;
+         border-color: #9d4000 !important;
+         }
+         .v-application .warning--text.text--darken-3 {
+         color: #9d4000 !important;
+         caret-color: #9d4000 !important;
+         }
+         .v-application .warning.darken-4 {
+         background-color: #802700 !important;
+         border-color: #802700 !important;
+         }
+         .v-application .warning--text.text--darken-4 {
+         color: #802700 !important;
+         caret-color: #802700 !important;
+         }
+      </style>
+      <link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+      <style id="_goober"> .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}</style>
+      <link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+      <link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+   </head>
+   <body id="">
+      <noscript><strong>Мы сожалеем, но Личный кабинет не работает без разрешенного JavaScript. Пожалуйста, включите JavaScript для продолжения работы с сервисом.</strong></noscript>
+      <div data-app="" class="v-application v-application--is-ltr theme--light" id="app">
+         <div class="v-application--wrap">
+            <nav data-v-89ae7222="" class="v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--mini-variant v-navigation-drawer--open-on-hover theme--light" id="navigation-drawer" mobile-break-point="599" style="height: 100vh; top: 0px; transform: translateX(-100%); width: 56px;" data-booted="true">
+               <div class="v-navigation-drawer__content">
+                  <div data-v-89ae7222="" id="sidebar" data-simplebar-auto-hide="" class="sidebar" data-simplebar="init">
+                     <div class="simplebar-wrapper" style="margin: 0px;">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                           <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        <div class="simplebar-mask">
+                           <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                              <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden;">
+                                 <div class="simplebar-content" style="padding: 0px;">
+                                    <div data-v-89ae7222="" class="v-image v-responsive theme--light" style="max-height: 110px;">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 72.973%;"></div>
+                                       <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://cabinet.ssau.ru/images/nav_drawer_bg.png&quot;); background-position: center center;"></div>
+                                       <div class="v-responsive__content" style="width: 333px;">
+                                          <a data-v-89ae7222="" href="/" class="d-flex align-items-end pa-4 router-link-active" id="logo" target="_self">
+                                             <div data-v-89ae7222="" class="pr-1">
+                                                <div data-v-89ae7222="" class="v-image v-responsive theme--light" id="main-logo">
+                                                   <div class="v-responsive__sizer" style="padding-bottom: 144%;"></div>
+                                                   <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://cabinet.ssau.ru/images/logo_white.svg&quot;); background-position: center center;"></div>
+                                                   <div class="v-responsive__content" style="width: 75px;"></div>
+                                                </div>
+                                             </div>
+                                             <div data-v-89ae7222="" class="ml-2">
+                                                <div data-v-89ae7222="" class="v-image v-responsive theme--light" id="text-logo" style="height: 27px; width: 98.5px;">
+                                                   <div class="v-image__image v-image__image--preload v-image__image--contain" style="background-position: center center;"></div>
+                                                   <div class="v-responsive__content"></div>
+                                                </div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div data-v-89ae7222="" class="d-flex flex-column align-center drawer-avatar text-center">
+                                       <span data-v-89ae7222="" class="b-avatar badge-primary rounded-circle" style="width: 2.5em; height: 2.5em;">
+                                          <span class="b-avatar-text" style="font-size: calc(1em);"><span>КВ</span></span><!---->
+                                       </span>
+                                       <p data-v-89ae7222="" class="title drawer-initials mb-1"> Кошель Владислав Владимирович </p>
+                                       <div data-v-89ae7222="" class="v-item-group theme--light v-btn-toggle v-btn-toggle--rounded primary--text" id="sidebar-quick-links"><a data-v-89ae7222="" href="//portal.office.com" class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--small"><span class="v-btn__content"><i data-v-89ae7222="" aria-hidden="true" class="v-icon notranslate mdi mdi-email theme--light" style="font-size: 12px;"></i></span></a><a data-v-89ae7222="" href="/settings" class="v-btn v-btn--flat v-btn--icon v-btn--round v-btn--router theme--light v-size--small"><span class="v-btn__content"><i data-v-89ae7222="" aria-hidden="true" class="v-icon notranslate mdi mdi-cogs theme--light" style="font-size: 12px;"></i></span></a><button data-v-89ae7222="" type="button" class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--small"><span class="v-btn__content"><i data-v-89ae7222="" aria-hidden="true" class="v-icon notranslate mdi mdi-logout theme--light" style="font-size: 12px;"></i></span></button></div>
+                                    </div>
+                                    <div data-v-89ae7222="" class="v-list v-sheet theme--light v-list--dense v-list--nav">
+                                       <a data-v-89ae7222="" href="/" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                          <div data-v-89ae7222="" class="v-list-item__icon"><i data-v-89ae7222="" aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-numeric-1-box-multiple-outline theme--light"></i></div>
+                                          <div data-v-89ae7222="" class="v-list-item__content">
+                                             <div data-v-89ae7222="" class="v-list-item__title">Главная</div>
+                                          </div>
+                                       </a>
+                                       <a data-v-89ae7222="" href="/messenger" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                          <div data-v-89ae7222="" class="v-list-item__icon"><i data-v-89ae7222="" aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-email theme--light"></i></div>
+                                          <div data-v-89ae7222="" class="v-list-item__content">
+                                             <span data-v-89ae7222="" class="v-badge v-badge--bordered v-badge--bottom v-badge--inline theme--light">
+                                                <div data-v-89ae7222="" class="v-list-item__title">Мессенджер</div>
+                                                <span class="v-badge__wrapper"><span aria-atomic="true" aria-label="знак" aria-live="polite" role="status" class="v-badge__badge primary" style="display: none;"></span></span>
+                                             </span>
+                                          </div>
+                                       </a>
+                                       <a data-v-89ae7222="" href="/info/military" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                          <div data-v-89ae7222="" class="v-list-item__icon"><i data-v-89ae7222="" aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-shield theme--light"></i></div>
+                                          <div data-v-89ae7222="" class="v-list-item__content">
+                                             <div data-v-89ae7222="" class="v-list-item__title">Военно-учетный стол</div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                    <hr data-v-89ae7222="" role="separator" aria-orientation="horizontal" class="ma-0 v-divider theme--light">
+                                    <div data-v-89ae7222="" class="v-list v-sheet theme--light v-list--dense v-list--nav">
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-school theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Выпускнику</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-information theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Информация</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--active v-list-group--no-action primary--text">
+                                          <div tabindex="0" aria-expanded="true" role="button" class="v-list-group__header v-list-item v-list-item--active v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-book-open-page-variant theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Учёба</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <div class="v-list-group__items" style="">
+                                             <a data-v-89ae7222="" href="/study/student-timetable" aria-current="page" class="menu-children_active v-list-item--active v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Расписание</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/attendance-journal/for-student" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Электронный журнал</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/study/current-progress/for-student" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Текущая успеваемость</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/study/certification" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Промежуточная аттестация</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/study/record-book" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Зачетная книжка</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/study/working-plan" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Рабочий план</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/study/working-plan-competencies" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Результаты освоения ООП</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/negotiations" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Согласование</div>
+                                                </div>
+                                             </a>
+                                             <a data-v-89ae7222="" href="/study/scholarship" class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                                <div data-v-89ae7222="" class="v-list-item__content">
+                                                   <div data-v-89ae7222="" class="v-list-item__title">Стипендия</div>
+                                                </div>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-account theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Профиль</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-monitor theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Дистанц. обучение</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-information theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Сервисы</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-library-books theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Публикации</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-school theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Наука</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-summit theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> ИОТ</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                          <div tabindex="0" aria-expanded="false" role="button" class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                             <div class="v-list-item__icon v-list-group__header__prepend-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi mdi mdi-account-key theme--light"></i></div>
+                                             <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title"> Библиотека</div>
+                                             </div>
+                                             <div class="v-list-item__icon v-list-group__header__append-icon"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light"></i></div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="simplebar-placeholder" style="width: auto; height: 709px;"></div>
+                     </div>
+                     <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar simplebar-visible" style="width: 0px; display: none;"></div>
+                     </div>
+                     <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar simplebar-visible" style="height: 0px; display: none;"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="v-navigation-drawer__border"></div>
+            </nav>
+            <header class="v-sheet theme--dark v-toolbar v-toolbar--dense v-app-bar v-app-bar--fixed v-app-bar--is-scrolled" id="topbar" style="height: 48px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px; background-color: rgb(33, 150, 243); border-color: rgb(33, 150, 243); z-index: 400;" data-booted="true">
+               <div class="v-toolbar__content" style="height: 48px;">
+                  <div class="v-toolbar__title">Расписание</div>
+                  <div class="spacer"></div>
+                  <button type="button" class="d-none v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default"><span class="v-btn__content"><span class="v-badge v-badge--overlap theme--dark"><i aria-hidden="true" class="v-icon notranslate mdi mdi-email theme--dark"></i><span class="v-badge__wrapper"><span aria-atomic="true" aria-label="знак" aria-live="polite" role="status" class="v-badge__badge orange" style="inset: auto auto calc(100% - 12px) calc(100% - 12px);">6</span></span></span></span></button>
+                  <div class="v-menu mr-2">
+                     <!---->
+                  </div>
+               </div>
+            </header>
+            <main class="v-main v-content" style="padding: 48px 0px 0px;" data-booted="true">
+               <div class="v-main__wrap v-content__wrap">
+                  <div class="v-overlay v-overlay--absolute theme--dark" style="z-index: 5;">
+                     <div class="v-overlay__scrim white" style="opacity: 0;"></div>
+                  </div>
+                  <div id="content">
+                     <div class="container timetable-student-teacher container--fluid">
+                        <div>
+                           <div class="lesson-types">
+                              <div class="lesson-type lecture">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>Лекция</span></div>
+                              </div>
+                              <div class="lesson-type practice">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>Практика</span></div>
+                              </div>
+                              <div class="lesson-type laboratory">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>Лабораторная</span></div>
+                              </div>
+                              <div class="lesson-type exam">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>Экзамен</span></div>
+                              </div>
+                              <div class="lesson-type record">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>Зачет</span></div>
+                              </div>
+                              <div class="lesson-type consultation">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>Консультация</span></div>
+                              </div>
+                              <div class="lesson-type other">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>Другое</span></div>
+                              </div>
+                              <div class="lesson-type iet">
+                                 <div class="lesson-type-chip"><span class="lesson-type-badge"></span><span>—</span><span>ИОТ</span></div>
+                              </div>
+                           </div>
+                           <div class="desctop-timetable v-card v-sheet theme--light">
+                              <div class="header">
+                                 <div class="row weeks-row no-gutters">
+                                    <div class="col col-3"><button type="button" class="v-btn v-btn--flat v-btn--text theme--light v-size--default"></button></div>
+                                    <div class="current-date col col-6">
+                                       <div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-select">
+                                          <div class="v-input__control">
+                                             <div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-150" class="v-input__slot">
+                                                <div class="v-select__slot">
+                                                   <label for="input-150" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;font-size: 22px;">Неделя</label>
+                                                   <div class="v-select__selections">
+                                                      <div class="v-select__selection v-select__selection--comma" style="font-size: 20px;">25</div>
+                                                      <input id="input-150" readonly="readonly" type="text" aria-readonly="false" autocomplete="off">
+                                                   </div>
+                                                   <input type="hidden" value="25">
+                                                </div>
+                                                <div class="v-menu">
+                                                   <!---->
+                                                </div>
+                                             </div>
+                                             <div class="v-text-field__details">
+                                                <div class="v-messages theme--light">
+                                                   <div class="v-messages__wrapper"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex justify-end col col-3"></div>
+                                 </div>
+                                 <div class="row mobile-week-dates-row no-gutters d-flex d-md-none">
+                                    <div class="day col">
+                                       <div class="day-name">пн</div>
+                                       <div class="date"> 12 </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="day-name">вт</div>
+                                       <div class="date"> 13 </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="day-name">ср</div>
+                                       <div class="date"> 14 </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="day-name">чт</div>
+                                       <div class="date"> 15 </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="day-name">пт</div>
+                                       <div class="date"> 16 </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="day-name">сб</div>
+                                       <div class="date"> 17 </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="table">
+                                 <div class="row days-row no-gutters d-none d-md-flex">
+                                    <div class="time-cell"> Время </div>
+                                    <div class="day col">
+                                       <div class="date"> 12.02.24 </div>
+                                       <div class="day-name"> пн </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="date"> 13.02.24 </div>
+                                       <div class="day-name"> вт </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="date"> 14.02.24 </div>
+                                       <div class="day-name"> ср </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="date"> 15.02.24 </div>
+                                       <div class="day-name"> чт </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="date"> 16.02.24 </div>
+                                       <div class="day-name"> пт </div>
+                                    </div>
+                                    <div class="day col">
+                                       <div class="date"> 17.02.24 </div>
+                                       <div class="day-name"> сб </div>
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">08:00</div>
+                                             <div class="finish">09:35</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson practice">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Практика </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Физика </div>
+                                                <div class="room">243-5</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/337526" class="teacher"> Занин Владимир Иванович </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson lecture">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лекция </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Языки программирования и структуры данных </div>
+                                                <div class="room">308-3</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/67253001" class="teacher"> Котенева Светлана Эдуардовна </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson laboratory">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лабораторная </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Иностранный  язык </div>
+                                                <div class="room">405-7</div>
+                                                <!---->
+                                                <div class="subgroups"> подгруппа: 1 </div>
+                                                <div><a href="/staff/535991641" class="teacher"> Помельникова Елена Александровна </a></div>
+                                                <a href="https://bbb.ssau.ru/b/j2q-ant-txr" target="_blank" class="mt-2 mb-2"> Перейти в конференцию </a><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <div class="lesson laboratory">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лабораторная </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Иностранный  язык </div>
+                                                <div class="room">417-7</div>
+                                                <!---->
+                                                <div class="subgroups"> подгруппа: 2 </div>
+                                                <div><a href="/staff/110198905" class="teacher"> Троицкая Юлия Валерьевна </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson lecture">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лекция </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Математический анализ </div>
+                                                <div class="room">308-3</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/385214228" class="teacher"> Арчибасов Алексей Алексеевич </a></div>
+                                                <a href="https://bbb.ssau.ru/b/u63-2wc-p4x" target="_blank" class="mt-2 mb-2"> Перейти в конференцию </a><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">09:45</div>
+                                             <div class="finish">11:20</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson practice">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Практика </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Языки программирования и структуры данных </div>
+                                                <div class="room">314-15</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/67253001" class="teacher"> Котенева Светлана Эдуардовна </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson lecture">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лекция </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Физика </div>
+                                                <div class="room">308-3</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/99505345" class="teacher"> Шацкий Александр Владимирович </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson practice">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Практика </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Математическая логика и теория алгоритмов </div>
+                                                <div class="room">514-14</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/370896847" class="teacher"> Филиппов Григорий Александрович </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson lecture">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лекция </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Организация ЭВМ и вычислительных систем </div>
+                                                <div class="room">417-3</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/60372001" class="teacher"> Зеленко Лариса Сергеевна </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">11:30</div>
+                                             <div class="finish">13:05</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson lecture">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лекция </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Математический анализ </div>
+                                                <div class="room">Л5-5</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/385214228" class="teacher"> Арчибасов Алексей Алексеевич </a></div>
+                                                <a href="https://bbb.ssau.ru/b/u63-2wc-p4x" target="_blank" class="mt-2 mb-2"> Перейти в конференцию </a><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson practice">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Практика </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Алгебра и геометрия </div>
+                                                <div class="room">513-14</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/379942823" class="teacher"> Микенберг Михаил Аврамович </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson lecture">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лекция </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Алгебра и геометрия </div>
+                                                <div class="room">308-3</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/65434001" class="teacher"> Коновалова Елена Игоревна </a></div>
+                                                <!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">13:30</div>
+                                             <div class="finish">15:05</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson lecture">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Лекция </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Математическая логика и теория алгоритмов </div>
+                                                <div class="room">Л5-5</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/370896847" class="teacher"> Филиппов Григорий Александрович </a></div>
+                                                <a href="https://bbb.ssau.ru/b/cjq-7ah-8zx-jbv" target="_blank" class="mt-2 mb-2"> Перейти в конференцию </a><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson practice">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Практика </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Математический анализ </div>
+                                                <div class="room">407-14</div>
+                                                <!----><!---->
+                                                <div><a href="/staff/385214228" class="teacher"> Арчибасов Алексей Алексеевич </a></div>
+                                                <a href="https://bbb.ssau.ru/b/u63-2wc-p4x" target="_blank" class="mt-2 mb-2"> Перейти в конференцию </a><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <div class="lesson practice">
+                                             <div class="lesson-type-wrap">
+                                                <div class="lesson-type-badge mt-1"></div>
+                                                <div class="lesson-type-chip"> Практика </div>
+                                                <!---->
+                                             </div>
+                                             <div class="lesson-info">
+                                                <div class="discipline d-flex flex-column"> Элективные курсы по физической культуре и спорту </div>
+                                                <!----><!----><!---->
+                                                <div class="comment"></div>
+                                             </div>
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">15:15</div>
+                                             <div class="finish">16:50</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">17:00</div>
+                                             <div class="finish">18:35</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">18:45</div>
+                                             <div class="finish">20:15</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                                 <div>
+                                    <div class="row no-gutters lessons-row">
+                                       <div class="time-cell">
+                                          <div class="time">
+                                             <div class="start">20:25</div>
+                                             <div class="finish">21:55</div>
+                                          </div>
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-flex">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!---->
+                                       </div>
+                                       <div class="lessons-cell d-md-flex col d-none">
+                                          <!----><!---->
+                                       </div>
+                                    </div>
+                                    <hr class="d-block d-md-none">
+                                 </div>
+                              </div>
+                              <!---->
+                           </div>
+                        </div>
+                     </div>
+                     <!---->
+                  </div>
+                  <div class="vue-notification-group" style="width: 300px; bottom: 0px; left: calc(50% - 150px);"><span></span></div>
+                  <form id="logoutForm" action="/logout" method="post" style="display: none;"><input type="hidden" name="_token" value=""></form>
+               </div>
+            </main>
+         </div>
+      </div>
+   </body>
+</html>

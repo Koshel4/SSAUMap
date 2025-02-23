@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карта SVG с панорамированием и масштабированием</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="hammer.js"></script>
+    <script src="svg-pan-zoom.js"></script>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div id="fullScreenFade" class="visible"></div>
+    <div id="map-container">
+        <object id="svg-map" type="image/svg+xml" data="" style="width: 100%; height: 100%;">Your browser does not support SVG</object>
+    </div>
+
+    <div id="control-btns">
+        <div class="control-btn" id="schedule-btn">📃</div>
+        <div class="control-btn" id="path-btn" style="margin-left: 6px;">🚶‍♂️</div>
+    </div>
+
+    <div id="schedule-iframe-container">
+        <iframe id="schedule-iframe" src="Rasp/output.html" frameBorder="0" scrolling="no"></iframe>
+        <div id="schedule-close-btn">❌</div>
+    </div>
+
+    <div id="place-title"></div>
+
+    <div id="floor-control-btns">
+        <div id="up-bpn">▲</div>
+        <div id="down-btn">▼</div>
+        <div id="outside-btn">🗺️</div>
+    </div>
+
+    <script src="pathfinding.js"></script>
+    <script src="svg-worker.js"></script>
+    <script src="route-builder.js"></script>
+    <script src="interaction.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG Map Node Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #svg-container {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .node {
+            fill: red;
+            stroke: black;
+            stroke-width: 1;
+        }
+        .mode-button {
+            padding: 8px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+        .mode-button.active {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>SVG Map Node Editor</h1>
+
+    <div>
+        <input type="file" id="svg-file" accept=".svg">
+    </div>
+
+    <div>
+        <button class="mode-button active" data-mode="node">Режим нод</button>
+        <button class="mode-button" data-mode="edge">Режим ребер</button>
+		 <button class="mode-button" data-mode="delete">Режим удаления</button>
+    </div>
+
+    <div id="svg-container"></div>
+
+    <div>
+        <button id="export-svg">Экспорт SVG</button>
+        <button id="export-js">Экспорт JS (edges.js)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

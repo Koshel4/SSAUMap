@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="map" width="1887" height="1529" viewBox="0 0 1887 1529" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <g id="street-map 1" clip-path="url(#clip0_1_2)">
+    <g id="Street-map">
+      <path id="Vector" d="M1887 0H0V1529H1887V0Z" fill="white"/>
+      <path id="path (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M886.945 283H1060.5V289H890V351.023L901.02 359.5H937.5V365.5H903V413.364L936.368 384H966V390H938.632L903.663 420.772L915.5 446.339V677H949V683H915.5V849.246L955.67 924.131L979.825 973.447L992 1019.61V1113H986V1070.95L728.189 1066.96L724.192 1006.5H684.041L687.959 1030.01L682.041 1030.99L677.959 1006.5H647.5V1160H641.5V1038H521V1032H641.5V1003.5L640.238 945H566V939H587V920H566V914H589.929L639.519 911.654L635.657 732.5H567.597L569 815.95L563 816.05L561.596 732.5H490.5V726.5H635.528L635.001 702.065L635 702.054L630.001 423.594L625.908 292.612L886.945 283ZM636.052 426.394L640.947 699H740.854L732.544 524.698L729.589 423.104L636.052 426.394ZM729.5 417.104V357.5H735.5V417.056L762 417.559V357.5H768V417.616H849.652L842.518 352.828L848.482 352.172L855.684 417.581L897 417.039V363.977L884 353.977V289.112L632.092 298.388L635.904 420.396L729.5 417.104ZM898.095 423.025L853.02 423.616H764.972L735.59 423.059L738.461 521.735L909.5 530.879V447.661L898.095 423.025ZM909.5 536.887L738.697 527.756L746.856 698.909L909.5 693.823V536.887ZM909.5 699.826L747.13 704.904L753.371 847H884V835H890V847H909.5V699.826ZM910.705 853H747.629L741.129 705H641.065L645.312 902H672V908H645.442L647.436 1000.5H676.171L673.191 992.553L678.809 990.447L682.579 1000.5H751V928.589L948.065 922.647L910.705 853ZM951.157 928.557L757 934.411V1006.5H730.205L733.811 1061.04L986 1064.95V1020.39L974.175 975.552L951.157 928.557ZM639.649 917.655L593 919.861V939H640.109L639.649 917.655Z" fill="white" stroke="black"/>
+	  <path id="p" d="M659.5 424.5V475H639V424.5H659.5Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_2" d="M639 419V412H653.5L661.5 419H639Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_3" d="M895.5 832H868.5V732H895.5V832Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_4" d="M729.5 684H651V644H729.5V684Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_5" d="M689.5 1032H680.5V1044.5H689.5V1032Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_6" d="M902.5 857.5H872V882.5H908L902.5 866.5V857.5Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_7" d="M676.5 910.5L679 990H656.5V910.5H676.5Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_8" d="M1007.5 1115.5H973V1139.5H1007.5V1115.5Z" fill="#F7EFB6" stroke="#919191"/>
+      <path id="p_9" d="M734 1066.5V1107.5H704.5L703.5 1066.5H734Z" fill="#F7EFB6" stroke="#919191"/>
+	  <g id="nodes"><circle cx="764.8496704101562" cy="359.47027587890625" r="5" class="node bld14" id="node5"/><circle cx="764.2631225585938" cy="419.7034606933594" r="5" class="node" id="node6"/><circle cx="731.4733276367188" cy="419.2323303222656" r="5" class="node" id="node7"/><circle cx="633.1039428710938" cy="421.87664794921875" r="5" class="node" id="node8"/><circle cx="660.1039428710938" cy="402.87664794921875" r="5" class="node" id="node1"/><circle cx="662.1039428710938" cy="402.87664794921875" r="5" class="node bld7" id="node23"/><circle cx="660.1039428710938" cy="421.87664794921875" r="5" class="node" id="node2"/><circle cx="628.3441162109375" cy="294.4195861816406" r="5" class="node" id="node9"/><circle cx="885.9026489257812" cy="285.4288330078125" r="5" class="node" id="node10"/><circle cx="885.373779296875" cy="350.47955322265625" r="5" class="node" id="node11"/><circle cx="898.595458984375" cy="361.056884765625" r="5" class="node" id="node12"/><circle cx="934.5584716796875" cy="361.056884765625" r="5" class="node" id="node13"/><circle cx="898.595458984375" cy="418.7034606933594" r="5" class="node" id="node14"/><circle cx="936.6739501953125" cy="386.4425354003906" r="5" class="node" id="node15"/><circle cx="963.6461791992188" cy="385.9136657714844" r="5" class="node" id="node16"/><circle cx="736.2330932617188" cy="523.4192504882812" r="5" class="node" id="node17"/><circle cx="910.7593994140625" cy="533.99658203125" r="5" class="node" id="node18"/><circle cx="911.817138671875" cy="446.7334289550781" r="5" class="node" id="node19"/><circle cx="638.3927001953125" cy="700.5899047851562" r="5" class="node" id="node20"/><circle cx="744.1661987304688" cy="701.1187744140625" r="5" class="node" id="node21"/><circle cx="912.8749389648438" cy="678.9063110351562" r="5" class="node" id="node22"/><circle cx="911.288330078125" cy="696.3589477539062" r="5" class="node" id="node24"/><circle cx="911.288330078125" cy="849.20166015625" r="5" class="node" id="node25"/><circle cx="886.4315795898438" cy="848.6727905273438" r="5" class="node" id="node28"/><circle cx="750.5125732421875" cy="848.6727905273438" r="5" class="node" id="node29"/><circle cx="563.29345703125" cy="729.6775512695312" r="5" class="node" id="node30"/><circle cx="636.2771606445312" cy="729.148681640625" r="5" class="node" id="node31"/><circle cx="642.0947265625" cy="904.203857421875" r="5" class="node" id="node32"/><circle cx="669.5958251953125" cy="904.7327270507812" r="5" class="node" id="node33"/><circle cx="641.0369873046875" cy="941.224609375" r="5" class="node" id="node34"/><circle cx="588.1502075195312" cy="940.1668701171875" r="5" class="node" id="node35"/><circle cx="588.6790771484375" cy="916.3677978515625" r="5" class="node" id="node36"/><circle cx="753.685791015625" cy="931.1760864257812" r="5" class="node" id="node37"/><circle cx="754.0991821289062" cy="1002.5733032226562" r="5" class="node" id="node38"/><circle cx="679.6443481445312" cy="1002.04443359375" r="5" class="node" id="node39"/><circle cx="643.1524658203125" cy="1002.5733032226562" r="5" class="node" id="node40"/><circle cx="730.9445190429688" cy="1062.3353271484375" r="5" class="node" id="node41"/><circle cx="857.8727416992188" cy="1065.9796142578125" r="5" class="node" id="node42"/><circle cx="857.8727416992188" cy="1050.9796142578125" r="5" class="node bld3" id="node3"/><circle cx="987.4451904296875" cy="1068.0950927734375" r="5" class="node" id="node43"/><circle cx="988.5029296875" cy="1018.4393310546875" r="5" class="node" id="node44"/><circle cx="976.3389892578125" cy="974.0144653320312" r="5" class="node" id="node45"/><circle cx="950.4244995117188" cy="923.7720336914062" r="5" class="node" id="node46"/><circle cx="987.4452514648438" cy="1123.6839599609375" r="5" class="node" id="node47"/><circle cx="862.27685546875" cy="1129.212890625" r="5" class="node" id="node48"/><circle cx="862.27685546875" cy="1121.212890625" r="5" class="node bld3a" id="node4"/><circle cx="729.35791015625" cy="1129.50146484375" r="5" class="node" id="node49"/><circle cx="737.8197631835938" cy="1091.423095703125" r="5" class="node" id="node51"/><circle cx="640.66455078125" cy="913.3663940429688" r="5" class="node" id="node52"/><circle cx="852.4424438476562" cy="420.3269958496094" r="5" class="node" id="node55"/><circle cx="844.876953125" cy="353.4981384277344" r="5" class="node" id="node56"/><circle cx="727.064306640625" cy="1002.1348876953125" r="5" class="node bld5" id="node57"/></g>
+      <path id="sport" d="M861.5 728V832.5H825V708H889.5V728H861.5Z" fill="#8BD3AF" stroke="#919191"/>
+      <path id="stadium" d="M726.5 538L729 643.5H651L657.5 502.5L664.5 491H704L714 508L719 535L726.5 538Z" fill="#8BD3AF" stroke="#919191"/>
+      <path id="g" d="M976.5 878.5V935.5H961L916.5 849.5V826.5H968.5V878.5H976.5Z" fill="#ACD09E" stroke="#919191"/>
+      <path id="g_2" d="M684.5 897H652V719H684.5V897Z" fill="#ACD09E" stroke="#919191"/>
+      <path id="korolev" d="M1000.5 1113.5H993.5L995.5 1111.5V1105.5H998.5V1111.5L1000.5 1113.5Z" fill="#896C42" stroke="#919191"/>
+      <path id="buran" d="M745 1120H738L740 1118V1112H743V1118L745 1120Z" fill="#896C42" stroke="#919191"/>
+      <path id="eik" d="M982.5 318L891.5 321V351L982.5 348.5V318Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="science" d="M1018 420.5H974.5V351H1018V420.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b" d="M756.5 381H739V417H756.5V381Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b7" d="M710.5 419H673.5V317H710.5V419Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b14" class="interactable" map="maps/14/fl4.svg" d="M822 418.5H791V343.5H714V330.5H711V317.5L881 314V354.5H853V343.5H822V387.5H848V411.5H822V418.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b9" d="M882.5 415H855.5L853 354.5H880.5L882.5 415Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b_2" d="M883 471.5V503L812 499.5V489L750 485V466L883 471.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b_3" d="M713.5 466.5V489H662.5V466.5H713.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b17" d="M1027 816H934V767H1027V816Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b11" d="M824.5 555L821.5 684.5L768.5 681L772.5 552L824.5 555Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b_4" d="M868 865H858.5V915.5H868V865Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b_5" d="M907 887H874V918.5H907V887Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b_6" d="M897.5 597H886.5V546.5H897.5V597Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b_7" d="M937.5 476.5H920.5V542.5H937.5V476.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b_8" d="M967.5 489H945V540.5H967.5V489Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="d3" d="M623.5 873.5V895.5L510.5 898V876.5L623.5 873.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="d8" d="M616 762.5H586.5V806H616V762.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="eat" d="M606 628.5V691H529.5V628.5H606Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b10" d="M762 832.5H801.5L804 710H764L762 832.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="d4" d="M623 1104.5V1126.5L509.5 1128.5V1106.5L623 1104.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="d2" d="M617.5 990.5V1012L505 1015V993L617.5 990.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b20" d="M610 952V972.5H506.5V918.5H554.5V952H610Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="tr3" d="M815 1075V1046H821.5V1075H815Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="rcitt" d="M790 942V1018.5H759.5V942H790Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="lib" d="M930 962V1018.5H966V962H930Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b3a" d="M743 1080H807V1075H910V1080H976.5V1109H743V1080Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b3" d="M925.5 1052V1046H796V1052H740V1018.5H804.5V941.5H833.5V1018.5H839V993.5H882V1018.5H887.5V944H917V1018.5H980V1052H925.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b15" d="M1026.5 936H985.5V1001.5H1026.5V936Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="tr15" d="M985.5 979.5H966V985.5H985.5V979.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b6" d="M1026.5 826.5V936H985.5V871H976V826.5H1026.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b5" d="M845 884.5V911H750V988H686V911H695.5V898H700.5V812H695.5V804H700.5V719H692.5V711H728V884.5H845Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="tr5" d="M815 911V941.5H822.5V911H815Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="d7" d="M1042 1106L1045 1061L1022.5 1059.5L1025 1022.5L1001.5 1021L999 1066.5L1021 1068L1019.5 1105L1042 1106Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="d8_2" d="M679 1101L676 1056L698.5 1054.5L696 1017.5L719.5 1016L722 1061.5L700 1063L701.5 1100L679 1101Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="military" d="M1027.5 751H943V715H966V612H1008.5V715H1027.5V751Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b18" d="M897 676.5H842V601.5H897V676.5Z" fill="#D9D0C9" stroke="#919191"/>
+      <path id="b13" d="M1030 588.5H996V446H936.5V425.5H1030V588.5Z" fill="#D9D0C9" stroke="#919191"/>
+    </g>
+    <g id="name-boxes" style="pointer-events: none;">
+      <rect textName="Корпус\n№7" id="building7" x="660.423" y="311.86" width="61.8413" height="108.64" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Корпус №14" id="building14" x="768.5" y="314" width="64.5843" height="29.8427" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Корпус\n№9" fontSize="8px" id="building9" x="848.463" y="361.992" width="38.5738" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Корпус №11" fontSize="10px" id="building11" x="773.529" y="587.895" width="46.0099" height="60.0144" transform="rotate(1.53481 774.529 587.895)" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Научный\nкорпус" id="buildingScience" x="848.529" y="610.895" width="38.5738" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Стадион" id="buildingStadium" x="668.713" y="555.985" width="38.5738" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Спортплощадка" id="buildingSports" x="824.5" y="720.985" width="38.5738" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Корпус №10" fontSize="8px" id="building10" x="763.713" y="745.985" width="38.5738" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Военная кафедра" id="buildingMilit" x="956.735" y="708" width="54.915" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Корпус №5" id="building5" x="699.012" y="887.742" width="48.4836" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Корпус №3" id="building3" x="834.095" y="1006.48" width="55.9045" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Административный корпус\n(№3а)" id="building3a" x="829.298" y="1069.24" width="55.9045" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+	  <rect textName="Корпус №6\n(спортивный)" fontSize="8.5px" id="building6" x="973.548" y="830.742" width="55.9045" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Корпус №15" id="building15" x="975.048" y="939.742" width="55.9045" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Библиотека" fontSize="8px" id="buildingLib" x="920.595" y="965.242" width="55.9045" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+      <rect textName="Крытый\nманеж" id="buildingManej" x="937.595" y="768.742" width="84.9706" height="45.5152" fill="#D9D9D9" fill-opacity="0"/>
+    </g>
+  </g>
+  <defs id="defs1">
+    <clipPath id="clip0_1_2">
+      <rect width="1887" height="1529" fill="white" id="rect1"/>
+    </clipPath>
+  </defs>
+</svg>

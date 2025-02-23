@@ -1,0 +1,13 @@
+.label {
+    fill: black;
+    pointer-events: none;
+}
+
+polyline {
+  transition: 1s;
+  opacity: 0;
+}
+
+polyline.visible {
+  opacity: 1;
+}
